@@ -150,4 +150,12 @@ document.addEventListener("DOMContentLoaded", function () {
         const totalAmount = nuevaVentana.document.getElementById("totalAmount");
         totalAmount.textContent = `$${subtotalTotal.toFixed(2)}`;
     });
+    window.addEventListener("scroll", () => {
+        const navbar = document.querySelector(".navbar");
+        if (window.scrollY > 10) {
+            navbar.classList.add("is-sticky");
+        } else {
+            navbar.classList.remove("is-sticky");
+        }
+    });
 });

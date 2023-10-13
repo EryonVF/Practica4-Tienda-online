@@ -10,24 +10,35 @@ header {
     padding: 20px;
 }
 
-nav {
-    background-color: #1e00ff;
-    padding: 15px 0;
-}
 
 .navbar {
- text-size-adjust: 50%
+    transition: top 0.3s;
+    position: sticky;
+    top: 0;
 }
 
-.navbar a {
-    margin: 0 15px;
-    text-decoration: none;
-    color: #ffffff;
-    font-weight: bold;
+/* Cambia el fondo cuando la barra de navegación se mueve */
+.navbar.is-sticky {
+    background-color: #000; /* Cambia el color de fondo cuando la barra se vuelve fija */
+    z-index: 1000; /* Asegura que esté por encima del contenido */
 }
+
+.bg-black {
+    background-color: #000 !important; /* Color de fondo negro */
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: #000000 !important; /* Texto blanco */
+}
+
 
 .container {
-    margin-top: 10px;
+    display: flex;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: #fff; /* Fondo blanco */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra suave */
 }
 
 .card {
