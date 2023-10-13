@@ -1,8 +1,12 @@
 document.addEventListener("DOMContentLoaded", function () {
     const catalogo = [
-        { id: 1, imagen: "https://img2.gratispng.com/20180621/igi/kisspng-computer-mouse-computer-keyboard-gamer-mouse-mats-5b2c65fcd880c6.8251180415296363488868.jpg", precio: 4900.00, descripcion: "PIKACHU EX 001/030 - YOKOHAMA EXCLUSIVE" },
-        { id: 2, imagen: "https://w7.pngwing.com/pngs/784/537/png-transparent-computer-keyboard-razer-blackwidow-chroma-v2-razer-blackwidow-ultimate-2016-gaming-keypad-game-peripherals-electronics-computer-keyboard-razer-blackwidow-chroma-v2.png", precio: 15 },
-        { id: 3, imagen: "https://www.masgamers.com/wp-content/uploads/2022/02/ROG-Fusion-II-500-01.jpg", precio: 20 }
+        { id: 1, imagen: "https://www.gamerscolombia.com/img/Mouse-Logitech-G502-KDA/img_5524_2_1641221831.png", precio: 249.00 , descripcion: "Mouse Logitech G502 KDA" },
+        { id: 2, imagen: "https://www.gamerscolombia.com/img/Mouse-Gamer-Logitech-G203-LIGHTSYNC-NEGRO/img_217__1591650955.png", precio: 130.00, descripcion: "Mouse Gamer Logitech G203 LIGHTSYNC NEGRO" },
+        { id: 3, imagen: "https://www.gamerscolombia.com/img/products/Monitor-LG-27GR75Q-B-Gamer-UltraGear-QHD-27-165-Hz-1-ms-GtG-HDR10-sRGB99/LG-27GR75Q-B16859827381.jpg", precio: 20 , descripcion: "Monitor LG 27GR75Q-B Gamer UltraGear™ QHD 27” 165 Hz 1 ms GtG HDR10 sRGB99%"},
+        { id: 4, imagen: "https://www.gamerscolombia.com/img/Astro-A50-Inalmbricos-y-Estacin-Base-PS4/img_35__1600193811.png", precio: 1100.00, descripcion: "Astro A50 Inalámbricos y Estación Base PS4" },
+        { id: 5, imagen: "https://www.gamerscolombia.com/img/Teclado-Quasar-TKL-RGB-Blanco-o-Negro/img_5522_3_1640189052.png", precio: 239.00, descripcion: "Teclado Quasar TKL RGB Blanco o Negro" },
+
+        
         // Agrega más productos aquí
     ];
 
@@ -22,7 +26,7 @@ document.addEventListener("DOMContentLoaded", function () {
             <div class="card">
                 <img src="${producto.imagen}" class="card-img-top" alt="Producto ${producto.id}">
                 <div class="card-body">
-                    <h5 class="card-title">Producto ${producto.id}</h5>
+                    <h5 class="card-title">Articulo ${producto.id}</h5>
                     <p class="card-text">${producto.descripcion ? producto.descripcion : ''}</p>
                     <p class="card-text">Precio: $${producto.precio.toFixed(2)}</p>
                     <label for="cantidadProducto${producto.id}">Cantidad:</label>

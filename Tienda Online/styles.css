@@ -19,12 +19,12 @@ header {
 
 /* Cambia el fondo cuando la barra de navegación se mueve */
 .navbar.is-sticky {
-    background-color: #000; /* Cambia el color de fondo cuando la barra se vuelve fija */
+    background-color: #ca1414; /* Cambia el color de fondo cuando la barra se vuelve fija */
     z-index: 1000; /* Asegura que esté por encima del contenido */
 }
 
 .bg-black {
-    background-color: #000 !important; /* Color de fondo negro */
+    background-color: #1a62fc !important; /* Color de fondo negro */
 }
 
 .navbar-dark .navbar-nav .nav-link {
@@ -42,16 +42,17 @@ header {
 }
 
 .card {
-    border: 1px solid #ddd;
+    border: 1px solid #ff2a2a;
     border-radius: 5px;
     padding: 10px;
     text-align: center;
+    width: 135%; /* Ocupa todo el ancho de la página */
 }
 
 
 .card img {
-    max-width: 20%; /* Cambia el tamaño máximo de la imagen al 80% del contenedor */
-    box-shadow: 3px 3px 5px 0 rgba(0, 0, 0, 0.2); /* Agrega un sombreado a las imágenes */
+    max-width: 15%; /* Cambia el tamaño máximo de la imagen al 80% del contenedor */
+    box-shadow: 3px 3px 5px 0 rgba(255, 0, 0, 0.2); /* Agrega un sombreado a las imágenes */
 }
 
 .card-title {
@@ -60,8 +61,9 @@ header {
 }
 
 .card-text {
-    font-size: 1rem;
-    color: #007BFF;
+    font-size: 2rem;
+    color: #000000;
+
 }
 
 .form-control {
@@ -69,9 +71,16 @@ header {
     text-align: center;
 }
 
+
 .btn-primary {
-    margin-top: 10px;
-}
+        background-color: #87ffff;
+        margin-top: 10px;
+        padding: 15px 30px; /* Aumenta el espacio interno del botón para hacerlo más grande */
+        display: block; /* Hace que el botón sea un elemento de bloque */
+        margin: 0 auto; /* Centra el botón horizontalmente */
+        border-radius: 20px; /* Agrega bordes redondos con un radio de 20px */
+ }
+
 
 footer {
     background-color: #007BFF;
