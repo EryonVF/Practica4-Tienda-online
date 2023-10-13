@@ -1,0 +1,39 @@
+/* Puedes agregar estilos personalizados aquí */
+
+/* Estilos personalizados para la barra de navegación */
+.navbar {
+    background-color: #000; /* Fondo negro */
+}
+
+.navbar-nav .nav-item {
+    margin-right: 15px; /* Espacio entre elementos de navegación */
+}
+
+.navbar-nav .nav-link {
+    color: #fff !important; /* Texto blanco */
+}
+
+
+/* Estilo para el título del ticket */
+h2.bg-primary {
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+/* Estilo para la tabla de productos */
+.table {
+    border: 1px solid #dee2e6;
+}
+
+/* Estilo para las celdas de la tabla */
+.table th, .table td {
+    border: 1px solid #dee2e6;
+    padding: 8px;
+}
+
+/* Estilo para la celda del total */
+.total {
+    margin-top: 10px;
+    font-weight: bold;
+}
